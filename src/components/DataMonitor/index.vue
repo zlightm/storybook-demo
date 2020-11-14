@@ -15,9 +15,9 @@ export default {
     list: {
       type: Array,
       default: () => {
-        return [];// 测试
+        return []; // 测试
       },
-      Description:"testtt"
+      Description: "testtt"
     }
   }
 };
@@ -31,6 +31,7 @@ export default {
   font-size: 14px;
   padding: 0 20px;
   > div {
+    color:#fff;
     width: 101px;
     height: 97px;
   }
