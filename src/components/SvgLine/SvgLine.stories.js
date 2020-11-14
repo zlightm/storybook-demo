@@ -1,7 +1,7 @@
 import svgLine from './index.vue'
  
 export default {
-  title: 'Example/SvgLine',
+  title: 'SvgLine',
   component: svgLine,
   argTypes: {
     color: { control: 'color',description:"颜色" },
