@@ -4,8 +4,6 @@ export default {
   title: 'SvgLine',
   component: svgLine,
   argTypes: {
-    color: { control: 'color',description:"颜色" },
-    size: { control: '' },
   },
 }
 
