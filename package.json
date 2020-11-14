@@ -12,6 +12,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "scss": "^0.2.4",
+    "echarts": "^4.9.0",
+    "jk-iview-ui": "git+http://192.168.3.208/guomingxing/jk-iview-ui.git#v0.0.9",
+    "lodash": "^4.17.20",
     "vue": "^2.6.11"
   },
   "devDependencies": {

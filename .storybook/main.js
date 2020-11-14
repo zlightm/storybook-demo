@@ -1,15 +1,29 @@
 const path = require('path');
 module.exports = {
   "stories": [
-    "../src/**/*.stories.mdx",
-    '../src/stories/**/*.stories.@(js|mdx)',
+    // "../src/**/*.stories.mdx",
+    // '../src/stories/**/*.stories.@(js|mdx)',
     '../src/components/**/*.stories.@(js|mdx)',
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    '../src/components/**/**/*.stories.@(js|mdx)'
+    // "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ],
+  addons: [
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+      }
+    },
+    '@storybook/addon-actions', '@storybook/addon-links', '@storybook/preset-scss',"@storybook/addon-essentials", {
+      name: '@storybook/addon-storysource',
+      options: {
+        loaderOptions: {
+          injectStoryParameters: false,
+        },
+      },
+    }],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
