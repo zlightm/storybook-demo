@@ -1,4 +1,4 @@
-import MyButton from './Button.vue';
+import MyButton from './index.vue';
 
 export default {
   title: 'Example/Button',
@@ -16,25 +16,24 @@ const Template = (args, { argTypes }) => ({
   template: '<my-button @onClick="onClick" v-bind="$props" />',
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
+export const button = Template.bind({});
+button.args = {
   label: 'Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
+// export const Secondary = Template.bind({});
+// Secondary.args = {
+//   label: 'Button',
+// };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
+// export const Large = Template.bind({});
+// Large.args = {
+//   size: 'large',
+//   label: 'Button',
+// };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+// export const Small = Template.bind({});
+// Small.args = {
+//   size: 'small',
+//   label: 'Button',
+// };
