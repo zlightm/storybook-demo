@@ -4,21 +4,22 @@ export default {
   title: 'Button',
   component: MyButton,
   argTypes: {
-    backgroundColor: { control: 'color' ,description:"描述"},
+    label: { description: "描述111" },
+    backgroundColor: { control: 'color', description: "描述" },
     color: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
+    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } }
   },
 };
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MyButton },
-  template: '<my-button @onClick="onClick" v-bind="$props" />',
+  template: '<my-button @onClick="onClick" v-bind="$props" />'
 });
 
 export const button = Template.bind({});
 button.args = {
-  label: 'Button',
+  label: 'Button'
 };
 
 // export const Secondary = Template.bind({});

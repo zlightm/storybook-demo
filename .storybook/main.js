@@ -16,7 +16,7 @@ module.exports = {
         sourceLoaderOptions: null,
       }
     },
-    '@storybook/addon-actions', '@storybook/addon-links', '@storybook/preset-scss',"@storybook/addon-essentials", {
+    '@storybook/addon-actions', '@storybook/addon-links', '@storybook/preset-scss',"@storybook/addon-essentials",'@storybook/addon-controls', {
       name: '@storybook/addon-storysource',
       options: {
         loaderOptions: {

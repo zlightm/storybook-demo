@@ -1,7 +1,7 @@
 <template>
   <div style="width:100%; height:500px;">
     <svg viewBox="95 10 63 25" xmlns="http://www.w3.org/2000/svg" class="svgClass">
-      <path fill="none" stroke="#54df46" stroke-width="2" d="M11,30c0,0,51-19,97-9c0,0,71,21,107,3c0,0,23-10,26-12"/>
+      <path fill="none" stroke="#ffffff" stroke-width="2" d="M11,30c0,0,51-19,97-9c0,0,71,21,107,3c0,0,23-10,26-12"/>
 
       <circle r="5"  fill="#54df46" width="500" height="500">
         <animateMotion dur="5s" repeatCount="indefinite"

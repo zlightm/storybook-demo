@@ -11,17 +11,21 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "scss": "^0.2.4",
+    "dayjs": "^1.9.6",
     "echarts": "^4.9.0",
     "jk-iview-ui": "git+http://192.168.3.208/guomingxing/jk-iview-ui.git#v0.0.9",
     "lodash": "^4.17.20",
+    "scss": "^0.2.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-controls": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-links": "^6.0.28",
+    "@storybook/addon-storysource": "^6.0.28",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/vue": "^6.0.28",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -29,10 +33,10 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.1",
     "eslint": "^6.7.2",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
     "react-is": "^17.0.1",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

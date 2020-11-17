@@ -5,14 +5,26 @@ import ProgressBar from './index.vue'
 
 export default {
   title: 'Progress',
-  component: ProgressBar
+  component: ProgressBar,
+  argTypes: {
+    datas: { description: "数组" },
+    setStyle: { description: "样式" },
+  },
 }
 
-export const Progress = () => ({ //侧边栏
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
   components: { ProgressBar },
-  render (h) {
-    return <div style="width: 100%;height: 500px;background: #1c1d30;padding:15px 15px;">
-             <progress-bar datas={datas.progressData} setStyle={datas.style}></progress-bar>
-           </div>
+  template: `<div style="width: 100%;height: 500px;background: #1c1d30;padding:15px 15px;">
+              <progress-bar v-bind="$props"></progress-bar>
+            </div>`,
+  argTypes: {
+    datas: { description: "数组" },
+    setStyle: { description: "样式" },
   },
-})
+});
+export const Progress = Template.bind({});
+Progress.args = {
+  datas: datas.progressData,
+  setStyle: datas.style,
+};

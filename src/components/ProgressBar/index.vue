@@ -18,8 +18,8 @@
 export default {
   name: 'ProgressBar', // 进度条
   props: {
-    datas: Array,
-    setStyle: Object
+    datas: {type:Array,default:()=>{return []}},
+    setStyle: {type:Object,default:()=>{return {}}},
   },
   data () {
     return {

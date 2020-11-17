@@ -25,7 +25,6 @@ export default {
   position: relative;
   width: 300px;
   height: 50px;
-  background-color: #000;
   &:hover{
     &>.block {
       left: 100%;
