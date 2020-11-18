@@ -19,7 +19,7 @@ const Template = (args, { argTypes }) => ({
 
 export const button = Template.bind({});
 button.args = {
-  label: 'Button'
+  label: 'Button111'
 };
 
 // export const Secondary = Template.bind({});

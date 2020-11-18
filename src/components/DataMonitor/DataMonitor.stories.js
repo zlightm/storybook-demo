@@ -9,11 +9,15 @@ export default {
   },
 }
 
-export const DataMonitors = () => ({ //侧边栏
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
   components: { DataMonitor },
-  render(h) {
-    return <div style="width: 100%;height: 500px;background: #1c1d30;padding:15px 15px;">
-      <DataMonitor list={datas.dataList}></DataMonitor>
-    </div>
-  }
-})
+  template: `<div style="width: 100%;height: 500px;background: #1c1d30;padding:15px 15px;">
+              <DataMonitor v-bind="$props"></DataMonitor>
+            </div>`
+});
+
+export const DataMonitors = Template.bind({});
+DataMonitors.args = {
+  list: datas.dataList
+};
